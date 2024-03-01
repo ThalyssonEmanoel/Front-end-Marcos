@@ -1,0 +1,47 @@
+:root{
+    --cor-linear:#BEC5F4, #B0D4FF,#D2E6FA;
+    --cor-quadrado:#E3F2FE;
+    --cor-preto:black;
+    --cor-pretoLeve:rgba(0, 0, 0, 0.459);
+    --textoCentro:text-align: center;
+}
+
+body{
+    background: linear-gradient(to  right, var(--cor-linear))    
+}
+
+.quadradoCEN{
+    width: 1700px;
+    height: 760px;
+    background-color: var(--cor-quadrado); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 100px; 
+    font-weight: 500px;
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    padding-top: 80px;
+    color:var(--cor-pretoLeve);
+}
+
+.menu ul li:hover {
+    font-weight: bold;
+    color:var(--cor-preto)
+}
+
+/* las-child significa na tradução geral "ùltimo filho", ou seja, última linha ficará sem margen na direita*/
+.menu ul li:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,4 @@
+ - Shift+alt+down or up = Linha atual é duplicada para cima ou para baixo;
+ - Alt+down or up = Linha atual é movimentada para cima ou para baixo;
+ - Cntrl+[ = Substitui o tab;
+ - Alt+Click = Inseri o curso em qualquer parte do código/documento; - 
