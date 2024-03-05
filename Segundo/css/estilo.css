@@ -5,6 +5,7 @@
     --cor-pretoLeve:rgba(0, 0, 0, 0.459);
     --cor-h1:#2B3556;
     --cor-vermelho:red;
+    --cor-pretoInvisivel:#00000000;
 }
 
 body{
@@ -12,13 +13,11 @@ body{
 }
 
 .quadradoCEN{
-    width: 1700px;
-    height: 780px;
+    width: 1500px;
+    height: 830px;
     background-color: var(--cor-quadrado); 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(10%, 8%);
 } 
 
 .menu ul {
@@ -32,7 +31,7 @@ body{
     margin-right: 100px; 
     font-weight: 500px;
     font-family: "Roboto", sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     padding-top: 80px;
     color:var(--cor-pretoLeve);
 }
@@ -55,6 +54,7 @@ body{
     text-justify: left;
     position: relative;
     transform: translate(10%, 130%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Human{
@@ -66,11 +66,59 @@ body{
 .Lil{
     height: 270px;
     width: 490px;
-    transform: translate(210%, 5%);
+    transform: translate(180%, 5%);
 }
 
 .paragrafo{
     font-size: 24px;
     color: var(--cor-pretoLeve);
     transform: translate(10%, -200%);
+}
+.dot {
+    text-align: center;
+    height: 10px;
+    width: 10px;
+    background-color:var(--cor-pretoInvisivel) ;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: var(--cor-pretoLeve);
+    transform: translate(910%,-600%);
+    margin-right: 10px; 
+}
+
+.dot:hover{
+    font-weight: bold;
+    color:var(--cor-preto);
+}
+
+.rodapé ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.rodapé ul li {
+    display: inline-block;
+    margin-right: 100px; 
+    font-weight: 500px;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    padding-top: 80px;
+    color:var(--cor-pretoLeve);
+}
+
+.rodapé ul li:hover {
+    font-weight: bold;
+    color:var(--cor-preto)
+}
+
+.rodapé ul li:last-child {
+    margin-right: 0;
+}
+
+.amazon{
+    opacity: 40%;
+    height: 50px;
+    filter: grayscale(100000%);
 }
