@@ -1,0 +1,26 @@
+:root{
+    --cor-preto: black solid;
+    --cor-branco: white;
+    --cor-cinza: lightgray;
+    --cor-amarelo:rgb(33, 255, 4);
+}
+.tabela{
+    width: 100%;
+    border: 1px var(--cor-preto);
+    border-collapse: collapse;
+}
+
+.tabela td, .tabela th{
+    padding: 16px;
+    border: var(--cor-preto);
+}
+.tabela th{
+    color:var(--cor-branco);
+    background-color: var(--cor-preto);
+}
+.tabela tr:nth-child(odd){
+    background-color: var(--cor-cinza)
+}
+.tabela tr:hover{
+    background-color:var(--cor-amarelo) ;
+}
