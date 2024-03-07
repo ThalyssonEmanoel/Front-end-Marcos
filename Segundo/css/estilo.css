@@ -87,11 +87,6 @@ body{
     margin-right: 10px; 
 }
 
-.dot:hover{
-    font-weight: bold;
-    color:var(--cor-preto);
-}
-
 .rodapé ul {
     margin: 0;
     padding: 0;
@@ -108,10 +103,6 @@ body{
     color:var(--cor-pretoLeve);
 }
 
-.rodapé ul li:hover {
-    font-weight: bold;
-    color:var(--cor-preto)
-}
 
 .rodapé ul li:last-child {
     margin-right: 0;
