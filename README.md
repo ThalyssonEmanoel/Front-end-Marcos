@@ -8,10 +8,14 @@
  
  #Comandos de CSS:
  - :root{--cor-linear:umaCorQualquer}--> Esse comando é par criar variáveis;
+
  - linear-gradient(to  right, var(--cor-linear))--> Esse é para conseguir fazer uma cor linear;
+
  - transform: translate(-50%, -50%)--> Serve para colocar um objeto em determinada coordenada;
+
  - .menu ul li:hover {}--> Defini uma classe específica para poder editar, o houver é quando o mouse passa por cima de
  objeto;
+ 
  - .menu ul li:last-child {}--> Indica que o último objetop daquela "classe" terá um ação/modificação;
 
  #Comandos de Html:
