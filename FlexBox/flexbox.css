@@ -1,5 +1,15 @@
+:root{
+    --cor-preto:black;
+    --cor-coral:coral;
+    --cor-verde:green;
+    --cor-azul:rgb(25, 0, 255);
+    --cor-esquisita:#ce923c;
+    --cor-marrom:brown;
+    --cor-branco:white;
+}
+
 body{
-    background-color: rgb(140, 250, 213);
+    background-color: var(--cor-preto);
     height: 100vh;
     margin: 0;
 
@@ -9,7 +19,7 @@ body{
 }
 
 .container{
-    border: 3px solid coral;
+    border: 3px solid var(--cor-coral);
     height: 600px;
     width: 900px;
 
@@ -20,9 +30,9 @@ body{
     justify-content: space-evenly ;
 }
 .itens{
-    border: 2px solid green;
-    height: 250px;
-    width: 250px;
+    border: 2px solid var(--cor-verde);
+    height: 220px;
+    width: 220px;
 
     display: flex;
     align-items: center;
@@ -30,7 +40,7 @@ body{
 }
 
 .childChild{
-    border: 2px solid black;
+    border: 2px solid var(--cor-preto);
     height: 200px;
     width: 200px;
 
@@ -40,7 +50,40 @@ body{
 }
 
 .BiChild{
-    border: 2px solid rgb(25, 0, 255);
+    border: 2px solid var(--cor-azul);
     height: 150px;
     width: 150px;
+
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.filhooo{
+    border: 2px solid var(--cor-esquisita);
+    height: 80px;
+    width: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filho4{
+    border: 2px solid var(--cor-marrom);
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filho5{
+    border: 2px solid var(--cor-branco);
+    height: 20px;
+    width: 20px;
+    color: var(--cor-branco);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
