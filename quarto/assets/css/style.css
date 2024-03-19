@@ -1,23 +1,47 @@
 :root{
     --cor-verde:#1B4436;
     --cor-branco:white;
+    --preto:black;
 }
 
-body{
-    display: flex;
-    margin-left: 127px;
-    margin-right: 127px;
-    
+::selection{
+    background-color: blue;
+    color: #FFFFFF;
 }
-.cabecalho {
-    background-color: var(--cor-verde);
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.cabecalho nav li {
-    display: inline-block;
-    color: var(--cor-branco);
-    margin: 16px;
+.menu{
+    background-color: var(--cor-verde);
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    left: 150px;
+}
+.menu ul{
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    left: 45px;
+}
+.menu ul li a { 
+    padding: 2px 15px; 
+    display: inline-block; 
+    color: var(--cor-branco); 
+    text-decoration: none; 
+}
+
+.menu ul li a:hover{ 
+    background-color:var(--preto); 
+    border:2 px solid var(--preto);
+    display: block;
+    padding: 10px 0;
 }

@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .menu{
     background-color: #718387;
     color: #FFFFFF;
@@ -17,20 +18,20 @@
 
 /* link */
 
-.menu-link:link{
-    color: #FFFFFF;
-    border-bottom:2px #718387 solid;
-    text-decoration: none;
-    display: inline;
-    padding: 8px;
+    .menu-link:link{
+        color: #FFFFFF;
+        border-bottom:2px #718387 solid;
+        text-decoration: none;
+        display: inline;
+        padding: 8px;
 
-}
+    }
 
-.menu-link:visited{
-color: lightgray;
-border-bottom: bottom 2px #718387 solid;
+    .menu-link:visited{
+    color: lightgray;
+    border-bottom: bottom 2px #718387 solid;
 
-}
+    }
 
 .menu.menu-link:hover{
 border-bottom: 2px #FFFFFF solid;
