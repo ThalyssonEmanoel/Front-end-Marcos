@@ -1,30 +1,34 @@
 :root{  
     --cor-branco:white;
-    --cor-cinza:#333333;
+    --cor-cinza:gray;
 }
 
-body{
-    background-color:var(--cor-branco)
-}
-header{
-    background-color: var(--cor-cinza); 
-    color: var(--cor-branco); 
-    position: fixed ;
-    padding-top: -5%;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-header nav ul li{
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
+*{
     margin: 0;
-    transform: translate(30%,10%);
+    padding: 0;
+    box-sizing: border-box;
+}
+.Inicio{ 
+    border-radius: 10px; 
+    border: 3px solid var(--cor-cinza); 
+}
+.menu ul {
+    
+}
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.iconsinsta{
-    height:30px ;
-    width: 30px;
-    transform: translate(5200%,20%);
+.menu ul li a {
+    text-decoration: none;
+    color: black; 
+    padding: 5px 10px;
 }
+
+.menu ul li a:hover {
+    background-color: var(--cor-cinza);
+    color: white;
+}
+
