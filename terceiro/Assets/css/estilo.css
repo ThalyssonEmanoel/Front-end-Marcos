@@ -13,7 +13,7 @@
     border: 3px solid var(--cor-cinza); 
 }
 .menu ul {
-    
+   background-color: aliceblue; 
 }
 .menu ul li {
     list-style: none;
