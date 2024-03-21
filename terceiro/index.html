@@ -1,26 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/css/estilo.css">
     <title>Front do site2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mingzat&display=swap" rel="stylesheet">
+    <style>
+        :root {  
+            --cor-branco: white;
+            --cor-cinza: gray;
+            --cor-preto: black;
+            --cor-cinza-invi: rgba(128, 128, 128, 0.253);
+            --cor-preto-invi: rgba(0, 0, 0, 0.233);
+            --font-Mingzat:'Mingzat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Inicio { 
+            border-radius: 20px; 
+            border: 3px solid var(--cor-cinza-invi); 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px;
+            margin: 15px -60px;
+            transform: scale(0.9); 
+        }
+
+        #PURE {
+            color: var(--cor-preto);
+            font-family: var(--font-Mingzat);
+            font-weight: bold; 
+            font-size: 20px;
+            line-height: 20px; 
+            margin-left: 20px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex; 
+            margin-left: 250px;
+        }
+
+        .menu ul li {
+            margin-right: 30px; 
+            font-family: var(--font-Mingzat);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .menu a {
+            color: var(--cor-preto); 
+            text-decoration: none; 
+        }
+
+        .pesquisa {
+            display: flex;
+            align-items: center; 
+            background-color: var(--cor-cinza-invi); 
+            padding: 5px;
+            padding-right: 90px;
+            border-radius:20px; 
+            transform: translate(50%);
+        }
+
+        .pesquisa img {
+            margin-right: 10px;
+        }
+
+        .icones img {
+            width: 30px;
+            height: auto; 
+            margin: 0 15px;
+        }
+
+    </style>
 </head>
 <body>
     <header class="Inicio">
+        <div id="PURE">PUREM<br><span class="parte-oda">ODA</span></div>
         <nav class="menu">
             <ul>
-                <li><b>PUREM<br>ODA</b></li>
                 <li><a href="#WOMENSWEAR">WOMENSWEAR</a></li>
                 <li><a href="#MENSWEAR">MENSWEAR</a></li>
                 <li><a href="#KIDS">KIDS</a></li>
                 <li><a href="#SALE">SALE</a></li>
                 <li><a href="#DISCOVER">DISCOVER</a></li>
-                
-                <input type="text" placeholder="Pesquisar">
-                <input type="submit" value="Buscar">
             </ul>
         </nav>
+        <div class="pesquisa">
+            <img src="Assets/images/SEARCH.png" alt="Uma lupa de pesquisa">
+            <span style="font-family: var(--font-Mingzat); color: var(--cor-preto-invi); font-weight: bold;">Search</span>
+        </div>
+        <div class="icones">
+            <img src="Assets/images/Coração.png" alt="Um coração estilo insta">
+            <img src="Assets/images/Email.png" alt="Foto do Email">
+        </div>
     </header>
 </body>
 </html>
