@@ -25,3 +25,5 @@
  -<p>nfjahfj<span>aknfsnfk</span>asdnkand</p>--> O Span serve para por alguma função no meio da frase, por exemplo: mudr a cor, fonte e/ou por um link;
  -.exemplo*3--> Cria divs com o mesmo nome de classe na quantidade definida;
 
+
+Testando para ver se a branch developer está funcionando certinho
