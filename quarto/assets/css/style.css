@@ -2,6 +2,8 @@
     --cor-verde:#1B4436;
     --cor-branco:white;
     --preto:black;
+    --fontQuickSand:"Quicksand", sans-serif;
+    --verde80: #225243ce;
 }
 
 ::selection{
@@ -19,10 +21,10 @@
     background-color: var(--cor-verde);
     padding: 0;
     margin: 0;
-    height: 35px;
+    height: 50px;
     display: flex;
     align-items: center;
-    left: 150px;
+    width: 1440px;
 }
 .menu ul{
     padding: 8px;
@@ -30,18 +32,39 @@
     display: flex;
     margin: 0;
     padding: 0;
-    left: 45px;
+    font-family: var(--fontQuickSand);
+    font-weight: 500;
+    margin-left: 127px;
 }
-.menu ul li a { 
-    padding: 2px 15px; 
+.menu-link{ 
+    padding: 15px 15px; 
     display: inline-block; 
     color: var(--cor-branco); 
     text-decoration: none; 
 }
+.menu-link:hover{
+    color: var(--preto);
+    background-color: var(--cor-branco)
+}
+.título{
+    background: rgb(72,98,136);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url(../images/fundo.png);
 
-.menu ul li a:hover{ 
-    background-color:var(--preto); 
-    border:2 px solid var(--preto);
-    display: block;
-    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fontQuickSand);
+    color: var(--cor-branco);
+    text-align: center;
+    height: 399px; 
+    width: 1440px;
+}
+.textH1{
+    font-family: var(--fontQuickSand);
+    background-color: var(--verde80);
+    font-size: 48px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 73px;
+    margin-right:80px;
 }
