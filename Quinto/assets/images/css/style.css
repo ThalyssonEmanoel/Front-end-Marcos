@@ -1,1 +1,47 @@
+:root{
+    --cor-cinza:#F1F1F1;
+    --cor-branco:#FFFFFF;
+    --cor-preto:black;
+    --cor-azulEscuro:#253237;
+    --azulAcabado:#9DB4C0;
+    --JoseFinsFonte:font-family: "Josefin Sans", sans-serif;
+    --MontserradoFonte:"Montserrat", sans-serif;
+}
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+};
+
+.menu{
+    background-color: var(--cor-cinza);
+    height: 50px;
+    width: 1799px;
+    text-shadow: 1px 4px 7px var(--cor-preto);
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.menu ul{
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: var(--MontserradoFonte);
+    font-weight: 500;
+    margin-left: 127px;
+}
+.menu-link{ 
+    padding: 15px 15px; 
+    display: inline-block; 
+    color: var(--preto); 
+    text-decoration: none; 
+}
+.menu-link:hover{
+    color: var(--cor-branco);
+    background-color: var(--cor-preto);
+}
