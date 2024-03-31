@@ -53,18 +53,35 @@ header{
     height:66px;
     margin-left: 120px;
 }
-.container2{
-    display: flex;
-    flex-direction: column;
-    margin: 80px 110px;
+.slider{
+    width: 1220px;
+    height: 395px;
+    overflow: hidden;
+    margin: 80px 300px;
 }
-
-.container2 h2{
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 305px;
+}
+.botoes input{
+    height: 15px;
+    width: 250px;
+    background-color: #c4c4c438;
+    border-radius: 10px;
+    border: #FFFFFF;
+}
+.botoes input:hover{
+    background-color: #C4C4C4;
+}
+.slider h2{
     font-family: var(--JoseFinsFonte);
     font-weight: 600;
     margin-left: 10px;
 }
-.container2 p{
+.slider p{
     font-family: var(--MontserradoFonte);
     font-weight: 400;
     color: #333333B2;
