@@ -1,5 +1,8 @@
 :root{
-    --FontRoboto-:Roboto,sans-serif;
+    --FontRoboto-:"Roboto",sans-serif;
+    --fontQuickSand-:"Quicksand", sans-serif;
+    --preto-:black;
+    --branco-:#FFFFFF;
 }
 
 *{
@@ -8,6 +11,56 @@
     box-sizing: 0;
 }
 
-.header{
+.navegation{
     font-family: var(--FontRoboto-);
+    background-color: black;
+    color: #CECECE;
+    display: flex;
+    padding: 10px;
+}
+.navegation img {
+    margin-left: 120px;
+}
+.navegation ul{
+    list-style: none;
+    margin-left: 48px;
+    margin-top: 6px;
+}
+
+.navegation ul li{
+    display: inline;
+    margin-right: 34px;
+}
+
+.apresentacao{
+    
+    background: rgb(255, 255, 255); 
+    background-image: url('/Sexto/Assets/images/FundoApresentacao.png');
+
+    color: var(--branco-);
+    height: 197px; 
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column
+}
+.apresentacao h1{
+    color: var(--preto-);
+    font-family: var(--FontRoboto-);
+    font-size: 36PX;
+    margin-bottom: 10px;
+}
+.apresentacao p{
+    color: var(--preto-);
+    font-family: var(--FontRoboto-);
+    margin-bottom: 34px;
+}
+
+.apresentacao input{
+    font-family: var(--fontQuickSand-);
+    width: 1200px;
+    height: 40px;
+    border: 0.5px solid var(--preto-);
+    margin-right: -3.7px;
+    border-radius: 5px 0px 0px 5px;
 }
