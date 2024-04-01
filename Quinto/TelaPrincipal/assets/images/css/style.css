@@ -190,7 +190,7 @@ header{
     position: absolute;
 }
 
-.rodape {
+#rodape {
     background-color: var(--cor-azulEscuro);
     padding: 60px 0;
     font-family: var(--JoseFinsFonte);
@@ -231,6 +231,7 @@ header{
 
 .redes-sociais {
     margin-top: 20px; 
+    
 }
 
 .Desenvolvidopo{
@@ -248,4 +249,8 @@ header{
 
 .Vilhena{
     transform: translate(-45%,200%);
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
 }
