@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="gif" href="dragon.gif">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div class="container">
+<form >
+    <div class="exemplos">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Ex.:Thalysson Emanoel">
+    </div>
+    <div class="exemplos">
+        <label for="number">Número</label>
+        <input type="number"id="matricula" />
+    </div>
+    <div class="exemplos"> 
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date"id="nascimento">
+    </div>
+    <div class="exemplos">
+        <input type="checkbox" id="termos">
+        <label for="termos">Concordo com os termos</label>
+    </div>
+    <div class="exemplos">
+        <input type="radio" name="sexo" id="masculino"/>
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="feminino"/>
+        <label for="feminino">Feminino</label>
+    </div>
+    <div class="exemplos">
+        <label for="obs">Observações:</label>
+        <textarea id="obs"></textarea>
+    </div>
+    <div class="exemplos">
+        <label for="estado">Estado:</label>
+        <select id="estado">
+            <option value="AC">Acre</option>
+            <option value="AM">Amazonas</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+        </select>
+        <div>
+            <input type="button" value="Cadastrar">
+        </div>
+    </div>
+    <div class="dragon">
+        <img src="dragon.gif" alt="Banguela dançando" >
+    </div>
+</form>
+    </div>
+
+</body>
+</html>
