@@ -1,6 +1,6 @@
- #Esse bloco é para referenciar os comandos usados no geral
+ # Esse bloco é para referenciar os comandos usados no geral
 
- #Comandos do teclado no vscode:
+ # Comandos do teclado no vscode:
  - Shift+alt+down or up = Linha atual é duplicada para cima ou para baixo;
  - Alt+down or up = Linha atual é movimentada para cima ou para baixo;
  - Cntrl+[ = Substitui o tab;
@@ -20,8 +20,9 @@
 
  -justify-content: space-between(pode ter outros valores, como o around e o evenlyn)--> Coloca os elementos grudados no elemento pai, ou seja, caso haja 2 quadrados na linha horizontal, um irá para a direita e outro para a esquerda, caso haja 3, um ficará no meio, todos terão espaçamento iguais.
 
- #Comandos de Html:
+ # Comandos de Html:
  - <nav><ul><li>conteúdo</li><ul></nav>--> Normalmente usado para colocar palavras no cabeçalho;
+
  -<p>nfjahfj<span>aknfsnfk</span>asdnkand</p>--> O Span serve para por alguma função no meio da frase, por exemplo: mudr a cor, fonte e/ou por um link;
  -.exemplo*3--> Cria divs com o mesmo nome de classe na quantidade definida;
 

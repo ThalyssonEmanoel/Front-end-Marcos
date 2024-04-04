@@ -1,0 +1,149 @@
+:root{
+    --cor-cinza:#F1F1F1;
+    --cor-branco:#FFFFFF;
+    --cor-preto:rgb(0, 0, 0);
+    --cor-azulEscuro:#253237;
+    --azulAcabado:#9DB4C0;
+    --clarinho:#333333B2;
+    --JoseFinsFonte:"Josefin Sans", sans-serif;
+    --MontserradoFonte:"Montserrat", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--cor-cinza);
+    height: 100px;
+    width: auto;
+    box-shadow: 0px 15px 10px #2532371a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: var(--MontserradoFonte);
+    font-weight: 500;
+    margin-left: 1195px;
+}
+.menu-link{ 
+    padding: 15px 15px; 
+    display: inline-block; 
+    margin-right: 50px;
+    color: var(--preto); 
+    text-decoration: none; 
+}
+.menu-link:hover{
+    border-bottom: 5px solid var(--cor-preto);
+}
+.logo-img{
+    width:166px;
+    height:66px;
+    margin-left: 120px;
+}
+.container2{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+    justify-content: space-around;
+}
+.container2 h1{
+    font-weight: 600;
+    font-family: var(--JoseFinsFonte);
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.container2 p{
+    font-size: 24px;
+    font-family: var(--MontserradoFonte);
+    color: var(--clarinho);
+    margin-bottom: 40px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#rodape {
+    background-color: var(--cor-azulEscuro);
+    padding: 60px 0;
+    padding-bottom: 150px;
+    font-family: var(--JoseFinsFonte);
+    margin-left: -150px;
+    margin-top: 100px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.titulo {
+    color: var(--azulAcabado);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contato-item img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.textroda {
+    color: var(--cor-branco);
+    font-size: 16px;
+}
+
+.redes-sociais {
+    margin-top: 60px;  
+    
+}
+
+.Desenvolvidopo{
+    color: var(--azulAcabado);
+    font-size: 20px;
+    margin-bottom: 10px;
+    transform: translate(30%);
+}
+.logo{ 
+    transform: translate(100%);
+}
+.ifro{
+    transform: translate(250%);
+}
+
+.Vilhena{
+    transform: translate(-45%,200%);
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
