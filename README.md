@@ -22,5 +22,8 @@
 
  # Comandos de Html:
  - <nav><ul><li>conteúdo</li><ul></nav>--> Normalmente usado para colocar palavras no cabeçalho;
- - <p>nfjahfj<span>aknfsnfk</span>asdnkand</p>--> O Span serve para por alguma função no meio da frase, por exemplo: mudr a cor, fonte e/ou por um link;
- - .exemplo*3--> Cria divs com o mesmo nome de classe na quantidade definida;
+
+ -<p>nfjahfj<span>aknfsnfk</span>asdnkand</p>--> O Span serve para por alguma função no meio da frase, por exemplo: mudr a cor, fonte e/ou por um link;
+ -.exemplo*3--> Cria divs com o mesmo nome de classe na quantidade definida;
+
+Conteúdo: Rajax, 
