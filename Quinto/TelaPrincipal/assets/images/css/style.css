@@ -1,9 +1,13 @@
 :root{
-    --cor-cinza:#F1F1F1;
+    --cor-brancoEscuro:#F1F1F1;
     --cor-branco:#FFFFFF;
     --cor-preto:rgb(0, 0, 0);
     --cor-azulEscuro:#253237;
     --azulAcabado:#9DB4C0;
+    --sombreamento: #2532371a;
+    --cinzaBotão:#c4c4c438;
+    --cinza: #C4C4C4;
+    --pretoClaro: #333333B2;
     --JoseFinsFonte:"Josefin Sans", sans-serif;
     --MontserradoFonte:"Montserrat", sans-serif;
 }
@@ -18,10 +22,11 @@ header{
     background-color: var(--cor-cinza);
     height: 100px;
     width: auto;
-    box-shadow: 0px 15px 10px #2532371a;
+    box-shadow: 0px 15px 10px var(--sombreamento);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .container{
@@ -70,12 +75,12 @@ header{
 .botoes input{
     height: 15px;
     width: 300px;
-    background-color: #c4c4c438;
+    background-color: var(--cinzaBotão);
     border-radius: 10px;
-    border: 4px solid #FFFFFF;
+    border: 4px solid var(--cor-branco);
 }
 .botoes input:hover{
-    background-color: #C4C4C4;
+    background-color: var(--cinza);
 }
 .botoes input {
     cursor: pointer;
@@ -88,7 +93,7 @@ header{
 .slider p{
     font-family: var(--MontserradoFonte);
     font-weight: 400;
-    color: #333333B2;
+    color: var(--pretoClaro);
     margin-left: 10px;
 }
 .blocos{
@@ -103,7 +108,7 @@ header{
     font-family: var(--MontserradoFonte);
     font-weight: 400;
     margin-top: 20px;
-    color: #333333B2;
+    color: var(--pretoClaro);
 }
 .bloquinho{
     margin: 0 7px;
@@ -230,7 +235,7 @@ header{
 }
 
 .redes-sociais {
-    margin-top: 20px; 
+    margin-top: 60px; ; 
     
 }
 
