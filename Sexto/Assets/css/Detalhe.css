@@ -1,0 +1,57 @@
+:root{
+    --FontRoboto-:"Roboto",sans-serif;
+    --fontQuickSand-:"Quicksand", sans-serif;
+    --preto-:black;
+    --branco-:#FFFFFF;
+    --cinza:#C4C4C4;
+    --vermelhoFeio:#C0392B;
+    --vermelhoClaro:#c03a2bb7;
+    --corDosQuadradinhos:#000000
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+.navegation{
+    font-family: var(--FontRoboto-);
+    background-color: var(--preto-);
+    color: var(--cinza);
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+.navegation img {
+    margin-left: 120px;
+}
+.navegation ul{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+.navegation ul li{
+    display: inline;
+    margin-right: 60px;
+}
+.navegation ul li a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navegation ul li a:hover{
+    font-weight: 500;
+    padding: 17px 0;
+    color: var(--preto-);
+    background-color: var(--branco-);
+}
+
+.apresentacao{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.068) 0%, rgba(255, 255, 255, 0.062) 100%), url('/Assets/images/página2/FundoPapel.png');
+    background-size: cover;
+}
