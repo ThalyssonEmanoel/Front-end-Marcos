@@ -6,7 +6,7 @@
     --cinza:#C4C4C4;
     --vermelhoFeio:#C0392B;
     --vermelhoClaro:#c03a2bb7;
-    --corDosQuadradinhos:#000000
+    --corDosQuadradinhos:#000000;
     --verdeClaro-:#21D07A;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .apresentacao{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.068) 0%, rgba(255, 255, 255, 0.062) 100%), url('/Assets/images/página2/FundoPapel.png');
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 100%), url('/Assets/images/página2/FundoPapel.png');
     background-size: cover;
 
     color: var(--preto-);
@@ -101,13 +101,39 @@
 .bloco4{
     margin-left: 44px;
     margin-top: 52px;
+    margin-bottom: 40px;
     font-family: var(--fontQuickSand-);
+    font-size: 20px;
 }
 .bloco5{
     margin-left: 44px;
     margin-top: 10px;
     font-family: var(--fontQuickSand-);
+    display: flex;
 }
 .quadradinho{
+    width: 300px;
+    height: 12px; 
     background-color: var(--verdeClaro-);
+    border: var(--cinza);
+}
+.quadradinho2{
+    background-color: var(--cinza);
+    width: 50px;
+    height: 12px;
+    border: var(--cinza);
+}
+.bloco6{
+    margin-left: 44px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.tags{
+    margin-left: 42px;
+    font-size: 17px;
+    font-family: var(--fontQuickSand-);
+    background-color: var(--cinza);
+    padding: 5px 10px 5px 10px;
+    border-radius:5px;
 }
