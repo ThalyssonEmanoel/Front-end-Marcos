@@ -6,7 +6,8 @@
     --cinza:#C4C4C4;
     --vermelhoFeio:#C0392B;
     --vermelhoClaro:#c03a2bb7;
-    --corDosQuadradinhos:#000000
+    --corDosQuadradinhos:#000000;
+    --Roxo:blueviolet;
 }
 
 *{
@@ -188,7 +189,7 @@
     font-family:QuickSand,sans-serif;
     font-size: 12px;
     font-weight: 100;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-left: 4px;
     width: 50px;
     border: 1px solid var(--vermelhoFeio);
@@ -198,8 +199,8 @@
     border-radius: 0px 8px 8px 0px;
 }
 #BuscarB2:hover{
-    border: 1px solid var(--preto-);
-    background-color: var(--preto-);
+    border: 1px solid var(--Roxo);
+    background-color: var(--Roxo);
     cursor: pointer;
 }
 .opcoes{

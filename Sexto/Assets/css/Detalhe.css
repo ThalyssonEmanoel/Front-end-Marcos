@@ -7,6 +7,7 @@
     --vermelhoFeio:#C0392B;
     --vermelhoClaro:#c03a2bb7;
     --corDosQuadradinhos:#000000
+    --verdeClaro-:#21D07A;
 }
 
 *{
@@ -14,6 +15,7 @@
     padding: 0;
     box-sizing: 0;
 }
+
 
 
 .navegation{
@@ -54,4 +56,58 @@
 .apresentacao{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.068) 0%, rgba(255, 255, 255, 0.062) 100%), url('/Assets/images/página2/FundoPapel.png');
     background-size: cover;
+
+    color: var(--preto-);
+    height: 600px; 
+    padding: 100px;
+    display: flex;
+}  
+.blocoPrin{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bloco1 p{
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.bloco1{
+    display: flex;
+    color: var(--preto-);
+    font-family: var(--fontQuickSand-);
+    font-weight: 800;
+    margin-left: 40px;
+    font-size: 32px;
+
+}
+
+.bloco2{
+    display: flex;
+    font-size: 15px;
+    margin-left: 44px;
+}
+
+.bloco2 p{
+    margin-right: 30px;
+}
+
+.bloco3{
+    font-family: var(--FontRoboto-);
+    margin-left: 44px;
+    margin-top: 52px;
+    line-height: 2.5;
+}
+.bloco4{
+    margin-left: 44px;
+    margin-top: 52px;
+    font-family: var(--fontQuickSand-);
+}
+.bloco5{
+    margin-left: 44px;
+    margin-top: 10px;
+    font-family: var(--fontQuickSand-);
+}
+.quadradinho{
+    background-color: var(--verdeClaro-);
 }
