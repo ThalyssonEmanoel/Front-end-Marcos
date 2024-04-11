@@ -1,0 +1,37 @@
+:root {
+    --fontQuickSand: "Quicksand", sans-serif;
+    --fontInter: "Inter", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f8d8d; 
+}
+  
+.container {
+    display: flex;
+    width: 560px;
+    height: 780px; 
+    background-color: white;
+}
+
+.cabecalho h2{
+    font-family: var(--fontInter);
+    color: white;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 305%;
+    padding-bottom: 30px;
+    font-size: 30px;
+    background-color: #1C6E8C;
+}
