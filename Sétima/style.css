@@ -1,6 +1,9 @@
 :root {
     --fontQuickSand: "Quicksand", sans-serif;
     --fontInter: "Inter", sans-serif;
+    --branco: white;
+    --azul:#1C6E8C;
+
 }
 *{
     margin: 0;
@@ -9,7 +12,7 @@
 }
 html {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     height: 100%;
     display: flex;
     justify-content: center;
@@ -21,17 +24,17 @@ html {
     display: flex;
     width: 560px;
     height: 780px; 
-    background-color: white;
+    background-color: var(--branco);
 }
 
 .cabecalho h2{
     font-family: var(--fontInter);
-    color: white;
+    color: var(--branco);
     font-weight: 500;
     padding-top: 25px;
     padding-left: 40px;
-    padding-right: 305%;
+    padding-right: 306%;
     padding-bottom: 30px;
     font-size: 30px;
-    background-color: #1C6E8C;
+    background-color: var(--azul);
 }
