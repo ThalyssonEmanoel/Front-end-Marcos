@@ -10,8 +10,55 @@
 <body>
     <div class="container">
         <div class="cabecalho">
-            <h2>Inscrição</h2>
+            <h2>Inscrição</h2>  
         </div>
-      </div>
+
+        <div class="exemple">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="    Ex.: Maria de Oliveira">
+        </div>
+
+        <div class="exemple">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" placeholder="    Ex.: maria.oliveira@gmail.com">
+        </div>
+
+
+        <div class="sexo">
+            <p>Sexo:</p>
+        <div class="sexos">
+            <input type="radio" name="sexo" id="masculino"/>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino"/>
+            <label for="feminino">Feminino</label>
+        </div>
+    </div>
+
+        <div class="exemple">
+            <label for="curso">Curso:</label>
+            <select id="curso">
+            <option value="AC">HTML e CSS</option>
+            <option value="AM">Javascript</option>
+            <option value="RO">PowerBi</option>
+            <option value="RR">Python</option>
+            </select>
+        </div>
+        
+        <div class="Observacoes">
+            <label for="obs">Observações:</label>
+            <textarea id="obs"></textarea>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="termos">
+            <label for="termos">Estou de acordo com o termos de serviço</label>
+        </div>
+
+        <div class="Realizar">
+            <input type="button" value="Realizar inscrição" onclick="mostrarMensagem()">
+        </div>
+
+    </div>
 </body>
+        <script src="script.js"></script>
 </html>

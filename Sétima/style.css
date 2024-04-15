@@ -3,6 +3,8 @@
     --fontInter: "Inter", sans-serif;
     --branco: white;
     --azul:#1C6E8C;
+    --preto:black;
+    --azul-claro:#47ceff;
 
 }
 *{
@@ -13,7 +15,6 @@
 html {
     margin: 0;
     padding: 0; 
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +24,119 @@ html {
 .container {
     display: flex;
     width: 560px;
-    height: 780px; 
+    height: 1000px; 
     background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
 }
 
 .cabecalho h2{
     font-family: var(--fontInter);
     color: var(--branco);
     font-weight: 500;
-    padding-top: 25px;
-    padding-left: 40px;
-    padding-right: 306%;
-    padding-bottom: 30px;
+    padding: 30px 0 30px 40px;
     font-size: 30px;
     background-color: var(--azul);
+    margin-bottom: 40px;
+}
+
+.exemple{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 0 0 20px 40px;
+    font-weight: 600;
+    font-family: var(--fontQuickSand);
+}
+.exemple input{
+    margin: 10px 40px 0 0;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sexo p{
+    font-size: 25px;
+    margin: 0 0 5px 40px;
+    font-weight: 600;
+    font-family: var(--fontQuickSand);
+    display: flex;
+    flex-direction: column;
+}
+.sexos{
+    font-size: 22px;
+    margin: 0 10px 20px 20px;
+    font-weight: 400;
+    font-family: var(--fontQuickSand);
+}
+input[type="radio"] {
+    transform: scale(2);
+    margin: 0 10px 0 25px;
+    cursor: pointer;
+  }
+
+#curso{
+    margin-right: 40px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#obs{
+    margin: 0 40px 10px 0;
+    height: 130px;
+    font-size: 18px;
+    border-radius: 5px; 
+    resize: none;
+}
+
+.Observacoes{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 0 0 20px 40px;
+    font-weight: 600;
+    font-family: var(--fontQuickSand);
+}
+
+.checkbox{
+    font-size: 22px;
+    margin: 0 0 20px 40px;
+    font-weight: 400;
+    font-family: var(--fontQuickSand);
+}
+
+input[type="checkbox"] {
+    margin: 0 10px 0 5px;
+    transform: scale(1.8); 
+    cursor: pointer;
+}
+
+.Realizar input[type="button"] {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 20px 0 20px 40px;
+    font-family: var(--fontQuickSand);
+    margin: 80px 0 0 40px;
+    padding: 20px 140px 20px 140px ;
+    color: var(--branco);
+    background-color: var(--azul);
+    border: 0;
+    font-weight: 400;
+}
+
+.Realizar input[type="button"]:hover{
+    background-color: var(--azul-claro);
+    color: var(--preto);
+    cursor: pointer;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.Realizar input[type="button"]:active{
+    background-color: var(--azul-claro);
+    color: var(--preto);
+    cursor: pointer;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2)
 }
