@@ -1,0 +1,214 @@
+:root{
+    --FontRoboto-:"Roboto",sans-serif;
+    --fontQuickSand-:"Quicksand", sans-serif;
+    --preto-:black;
+    --branco-:#FFFFFF;
+    --cinza:#C4C4C4;
+    --vermelhoFeio:#C0392B;
+    --vermelhoClaro:#c03a2bb7;
+    --corDosQuadradinhos:#000000;
+    --Roxo:blueviolet;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+.navegation{
+    font-family: var(--FontRoboto-);
+    background-color: var(--preto-);
+    color: var(--cinza);
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+.navegation img {
+    margin-left: 120px;
+}
+.navegation ul{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+.navegation ul li{
+    display: inline;
+    margin-right: 60px;
+}
+.navegation ul li a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navegation ul li a:hover{
+    font-weight: 500;
+    padding: 17px 0;
+    color: var(--preto-);
+    background-color: var(--branco-);
+}
+
+.apresentacao{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.068) 0%, rgba(255, 255, 255, 0.062) 100%), url('/Assets/images/FundoApresentacao.png');
+    background-size: cover;
+
+    color: var(--branco-);
+    height: 300px; 
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bloco1{
+    margin-top: 120px;
+}
+.bloco img:hover{
+    box-shadow:  0 0 15px 5px var(--preto-);
+}
+#BuscarB{
+    margin-top: 10px;
+    font-family:QuickSand,sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    width: 155px;
+    border: 1px solid var(--vermelhoFeio);
+    background-color: var(--vermelhoFeio);
+    color: var(--branco-);
+    height: 43px;
+    border-radius: 0px 5px 5px 0px;
+}
+#BuscarB:hover{
+    border: 1px solid var(--preto-);
+    background-color: var(--preto-);
+    cursor: pointer;
+}
+.apresentacao h1{
+    color: var(--preto-);
+    font-family: var(--FontRoboto-);
+    font-size: 36PX;
+    margin-bottom: 50px;
+}
+.apresentacao p{
+    color: var(--preto-);
+    font-family: var(--FontRoboto-);
+    font-size: 22px;
+    margin-bottom: 34px;
+}
+
+.apresentacao input{
+    font-family: var(--fontQuickSand-);
+    width: 1200px;
+    height: 40px;
+    border: 0.5px solid var(--preto-);
+    margin-right: -4px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-left: 150px;
+    font-family: var(--fontQuickSand-);
+    font-size: 19px;
+}
+.bloco p{
+    margin-bottom: 20px;
+}
+.bloco{
+    margin-right: 110px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quadrados{
+    margin-left: 150px;
+}
+.quadrado {
+    margin-right: 20px;
+    margin-top: -50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--corDosQuadradinhos);
+    background-color: var(--cor-branco);
+    text-align: center;
+    line-height: 50px; 
+    float: left;
+    font-size: 18px; 
+    cursor: pointer; 
+}
+
+.quadrado:hover {
+    background-color: var(--vermelhoClaro); 
+    border: 1px solid var(--vermelhoFeio);
+    color:var(--branco-);
+}
+
+.rodapé{
+    font-family: var(--fontQuickSand-);
+    background-color: var(--preto-);
+    margin-top: 50px;
+    padding-top: 34px;
+    padding-bottom: 110px;
+    padding-left: 100px;
+    color: var(--branco-);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapé input{
+    margin-top: 10px;
+    font-family: var(--fontQuickSand-);
+    width: 280px;
+    height: 35px;
+    border: 0.5px solid var(--branco-);
+    margin-right: -4px;
+    border-radius: 8px 0px 0px 8px;
+}
+.pesquisar2{
+    display: flex;
+    flex-direction: column;
+}
+.barraP{
+    display: flex;
+}
+#BuscarB2{
+    font-family:QuickSand,sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 4px;
+    width: 50px;
+    border: 1px solid var(--vermelhoFeio);
+    background-color: var(--vermelhoFeio);
+    color: var(--branco-);
+    height: 37px;
+    border-radius: 0px 8px 8px 0px;
+}
+#BuscarB2:hover{
+    border: 1px solid var(--Roxo);
+    background-color: var(--Roxo);
+    cursor: pointer;
+}
+.opcoes{
+    margin-top: 8px;
+    margin-right: 431px;
+    font-size: 15px;
+}
+.opcoes p{
+    margin-bottom: 17px;
+    font-family: var(--fontQuickSand-);
+}

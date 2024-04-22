@@ -1,0 +1,204 @@
+:root{
+    --FontRoboto-:"Roboto",sans-serif;
+    --fontQuickSand-:"Quicksand", sans-serif;
+    --preto-:black;
+    --branco-:#FFFFFF;
+    --cinza:#C4C4C4;
+    --vermelhoFeio:#C0392B;
+    --vermelhoClaro:#c03a2bb7;
+    --corDosQuadradinhos:#000000;
+    --verdeClaro-:#21D07A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+.navegation{
+    font-family: var(--FontRoboto-);
+    background-color: var(--preto-);
+    color: var(--cinza);
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+.navegation img {
+    margin-left: 120px;
+}
+.navegation ul{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+.navegation ul li{
+    display: inline;
+    margin-right: 60px;
+}
+.navegation ul li a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navegation ul li a:hover{
+    font-weight: 500;
+    padding: 17px 0;
+    color: var(--preto-);
+    background-color: var(--branco-);
+}
+
+.apresentacao{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 100%), url('/Assets/images/página2/FundoPapel.png');
+    background-size: cover;
+
+    color: var(--preto-);
+    height: 600px; 
+    padding: 100px;
+    display: flex;
+}  
+.blocoPrin{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bloco1 p{
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.bloco1{
+    display: flex;
+    color: var(--preto-);
+    font-family: var(--fontQuickSand-);
+    font-weight: 800;
+    margin-left: 40px;
+    font-size: 32px;
+
+}
+
+.bloco2{
+    display: flex;
+    font-size: 15px;
+    margin-left: 44px;
+}
+
+.bloco2 p{
+    margin-right: 30px;
+}
+
+.bloco3{
+    font-family: var(--FontRoboto-);
+    margin-left: 44px;
+    margin-top: 52px;
+    line-height: 2.5;
+}
+.bloco4{
+    margin-left: 44px;
+    margin-top: 52px;
+    margin-bottom: 40px;
+    font-family: var(--fontQuickSand-);
+    font-size: 20px;
+}
+.bloco5{
+    margin-left: 44px;
+    margin-top: 10px;
+    font-family: var(--fontQuickSand-);
+    display: flex;
+}
+.quadradinho{
+    width: 300px;
+    height: 12px; 
+    background-color: var(--verdeClaro-);
+    border: var(--cinza);
+}
+.quadradinho2{
+    background-color: var(--cinza);
+    width: 50px;
+    height: 12px;
+    border: var(--cinza);
+}
+.bloco6{
+    margin-left: 44px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.tags{
+    margin-left: 42px;
+    font-size: 14px;
+    font-family: var(--fontQuickSand-);
+    background-color: var(--cinza);
+    padding: 5px 10px 5px 10px;
+    border-radius:5px;
+}
+.logos{
+    display: flex;
+    margin-top: 25px;
+}
+.logos img{
+    margin-left: 25px;
+}
+.imagensitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 24px;
+    font-family: var(--fontQuickSand-);
+}
+.imgss{
+    margin-left: 100px;
+    margin-right: 10px;
+}
+.imgss img{
+margin-right: 110px;
+margin-top: 50px;
+width: 450px;
+height: 300px;
+}
+.elenco{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 24px;
+    font-family: var(--fontQuickSand-);
+}
+.bloquinho{
+    text-align: center;
+}
+.elenco h1{
+    margin-bottom: 50px;
+}
+.atores{
+    display: flex;
+    overflow: auto;
+    width: 1500px; 
+    height: auto;
+    margin-bottom: 200px;
+    font-family: var(--fontQuickSand-);
+}
+.atores img{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.atores::-webkit-scrollbar {
+    width: 8px; 
+    height: 10px;
+}
+
+.atores::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.atores::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
