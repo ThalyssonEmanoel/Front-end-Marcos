@@ -1,0 +1,141 @@
+:root {
+    --fontQuickSand: "Quicksand", sans-serif;
+    --fontInter: "Inter", sans-serif;
+    --branco: white;
+    --azul:#1C6E8C;
+    --preto:black;
+    --azul-claro:#47ceff;
+    --fontRoboto:"Roboto", sans-serif;
+    --fundão:#0f1238;
+    --cinzaEcuro:#ccc;
+    --cinzaClaro:#f0f0f0;
+    --vemermelhoClaro:#ff2222;
+    --vermelhoEscuro: #e20101;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundão); 
+}
+  
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 560px;
+    height: 800px; 
+    background-color: var(--branco);
+    margin-top: 175px;
+}
+
+.titulo{
+    font-family: var(--fontRoboto);
+    font-size: 25px;
+    background-color: var(--azul);
+    padding: 25px 196px 25px 196px;
+    color: var(--branco);  
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+}
+.forma{
+    margin-bottom: -30px;
+    font-size: 25px;
+    font-family: var(--fontRoboto);
+}
+
+input[type="text"],
+    input[type="number"] {
+        padding-left: 5px; 
+    }
+
+.forma label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.forma input{
+    width: 300px;
+    height: 35px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+#btnAddLivro {
+    margin-top: 50px;
+    border-radius: 4px;
+    height: 50px;
+    font-family: var(--fontRoboto);
+    font-size: 20px;
+    background-color: var(--cinzaClaro); 
+    border: 2px solid var(--cinzaEcuro); 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+#btnAddLivro:hover {
+    background-color:var(--azul-claro); 
+    color: var(--branco); 
+    border-color: var(--azul-claro); 
+}
+
+#btnAddLivro:active {
+    background-color: var(--azul); 
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    border-color: var(--azul); 
+    transform: translateY(2px); 
+}
+
+
+.mensagem{
+    padding: 4px;
+    background-color: green;
+    margin: 4px;
+    margin-top: 100px;
+    color: var(--branco);
+    border-radius: 4px;
+    display: none;
+}
+
+#btnExcluirLivro{
+    width: 300px;
+    height: 35px;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border-radius: 4px;
+    height: 50px;
+    font-family: var(--fontRoboto);
+    font-size: 20px;
+    background-color: var(--cinzaClaro); 
+    border: 2px solid var(--cinzaEcuro); 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+#btnExcluirLivro:hover {
+    background-color:var(--vemermelhoClaro); 
+    color: var(--branco); 
+    border-color: var(--vemermelhoClaro); 
+}
+
+#btnExcluirLivro:active {
+    background-color: var(--vermelhoEscuro); 
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    border-color: var(--vermelhoEscuro); 
+    transform: translateY(2px); 
+}
+#drag{
+    margin-top: 20px;
+    margin-left: 50px;
+}
