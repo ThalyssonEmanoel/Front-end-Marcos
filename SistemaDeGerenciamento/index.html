@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/book.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Aula 01</title>
 </head>
@@ -12,7 +13,7 @@
     <div class="container">
 
         <div class="tarefa">
-            <h1>Livraria</h1>
+            <h1>Sistema de gerenciamento</h1>
         </div>
 
         <form class="forma">
@@ -25,23 +26,36 @@
                 <input type="date" id="ano">
             </div>
             <div>
-                <input type="submit" value="Adicionar" id="btnAddLivro"> 
+                <input type="submit" value="Adicionar" id="btnAddTarefa"> 
             </div>
             <a href="https://youtu.be/dQw4w9WgXcQ?si=Vlp_fwvZkml7DY7J" target="_blank">
-                <img src="assets/images/book.png" alt="drag" id="drag">
             </a>
         </form>
-
-        <div>
-            <input type="submit" value="Excluir" id="btnExcluirLivro">
-        </div>
-
-        <div id="mensagem" class="mensagem">mensagem</div>
     
-            <div id=conteudoTabela></div>
+        <div id="conteudoTabela"></div>
+    </div>
+
+    <div id="mensagem" class="mensagem">mensagem</div>
+
+    <div id="modalEditar" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2 class="h2tarefa">Editar Tarefa</h2>
+            <form id="formEditar">
+                <label for="editTarefa">Tarefa</label>
+                <input type="text" id="editTarefa">
+                <label for="editAno">Data de conclusão</label>
+                <input type="date" id="editAno">
+                <input type="hidden" id="editIndex">
+                <div class="btns">
+                    <button type="button" id="btnConfirmarEdicao">Confirmar</button>
+                    <button type="button" id="btnCancelarEdicao">Cancelar</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,19 +1,28 @@
-let inputtarefa = document.querySelector("#tarefa");
+let inputTarefa = document.querySelector("#tarefa");
 let inputAno = document.querySelector("#ano");
-let inputSubmit = document.querySelector("#addTarefa");
+let inputSubmit = document.querySelector("#btnAddTarefa");
 let conteudoTabela = document.querySelector("#conteudoTabela");
-let mensagem=document.querySelector("#mensagem")
-let inputExcluir=document.querySelector("#btnExcluirtarefa")
+let mensagem = document.querySelector("#mensagem");
+
+let modalEditar = document.querySelector("#modalEditar");
+let spanClose = document.querySelector(".close");
+let btnConfirmarEdicao = document.querySelector("#btnConfirmarEdicao");
+let btnCancelarEdicao = document.querySelector("#btnCancelarEdicao");
+let inputEditTarefa = document.querySelector("#editTarefa");
+let inputEditAno = document.querySelector("#editAno");
+let inputEditIndex = document.querySelector("#editIndex");
+
+let tarefas = [];
 
 getTarefas();
 renderizarTabela();
+
 function getTarefas() {
-    tarefas=JSON.parse(localStorage.getItem
-        ("tarefas")) ||[]
+    tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
 }
 
-function settarefas() {
-    localStorage.setItem("tarefas",JSON.stringify(tarefas))
+function setTarefas() {
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
 }
 
 function formatarData(data) {
@@ -21,30 +30,69 @@ function formatarData(data) {
     return `${dia}/${mes}/${ano}`;
 }
 
-function AddTarefa(tarefa, autor, ano) {
-    let tarefa = {
+function addTarefa(tarefa, ano) {
+    let novaTarefa = {
         tarefa: tarefa,
-        autor: autor,
         ano: formatarData(ano)
     };
-    tarefas.push(tarefa);
-    settarefas();
-    mostrarMensagem("DSFSGDS")
+    tarefas.push(novaTarefa);
+    setTarefas();
+    mostrarMensagem("Tarefa adicionada com sucesso!");
 }
-
-
 
 inputSubmit.addEventListener('click', function(e) {
     e.preventDefault();
-    AddTarefa(inputtarefa.value, inputAno.value);
+    addTarefa(inputTarefa.value, inputAno.value);
     limparFormulario();
     renderizarTabela();
 });
 
+function excluirTarefa(index) {
+    tarefas.splice(index, 1);
+    setTarefas();
+    mostrarMensagem("Tarefa excluída com sucesso!");
+    renderizarTabela();
+}
+
+function editarTarefa(index) {
+    inputEditTarefa.value = tarefas[index].tarefa;
+    inputEditAno.value = tarefas[index].ano.split('/').reverse().join('-');
+    inputEditIndex.value = index;
+    modalEditar.style.display = "block";
+}
+
+function confirmarEdicao() {
+    let index = inputEditIndex.value;
+    tarefas[index].tarefa = inputEditTarefa.value;
+    tarefas[index].ano = formatarData(inputEditAno.value);
+    setTarefas();
+    mostrarMensagem("Tarefa editada com sucesso!");
+    renderizarTabela();
+    modalEditar.style.display = "none";
+}
+
+spanClose.onclick = function() {
+    modalEditar.style.display = "none";
+}
+
+btnCancelarEdicao.onclick = function() {
+    modalEditar.style.display = "none";
+}
+
+btnConfirmarEdicao.onclick = function() {
+    confirmarEdicao();
+}
+
+window.onclick = function(event) {
+    if (event.target == modalEditar) {
+        modalEditar.style.display = "none";
+    }
+}
+
 function limparFormulario() {
-    inputtarefa.value = "";
+    inputTarefa.value = "";
     inputAno.value = "";
-    inputtarefa.focus();
+    inputTarefa.focus();
 }
 
 function renderizarTabela() {
@@ -75,12 +123,40 @@ function renderizarTabela() {
             background-color: #f9f9f9;
         }
     
-        .segundo{
-        background-color:white;
+        .segundo {
+            background-color: white;
         }
 
         .segundo:hover {
             background-color: #1C6E8C;
+            color: white;
+        }
+
+        .btnExcluir {
+            border: 1px solid black;
+            border-radius: 5px; 
+            padding: 5px 10px;
+            cursor: pointer;
+            background:white
+        }
+
+        .btnEditar {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px; 
+            margin-left: 5px;
+            
+        }
+
+        .btnExcluir:hover {
+            background-color: #ca0303;
+            color:white;
+        }
+
+        .btnEditar:hover {
+            background-color: darkblue;
             color:white
         }
     </style>
@@ -88,12 +164,17 @@ function renderizarTabela() {
     <table>
         <tr>
             <th>Tarefa</th>
-            <th>Data de conclusão</th>    
+            <th>Data de conclusão</th>
+            <th>Ações</th>    
         </tr>
-        ${tarefas.map(tarefa =>
-            `<tr class=segundo>
-            <td>${tarefa.tarefa}</td>
-            <td>${tarefa.ano}</td>
+        ${tarefas.map((tarefa, index) =>
+            `<tr class="segundo">
+                <td>${tarefa.tarefa}</td>
+                <td>${tarefa.ano}</td>
+                <td>
+                    <button class="btnExcluir" onclick="excluirTarefa(${index})">Excluir</button>
+                    <button class="btnEditar" onclick="editarTarefa(${index})">Editar</button>
+                </td>
             </tr>`
         ).join('')}
     </table>
@@ -101,12 +182,11 @@ function renderizarTabela() {
 }
 
 function mostrarMensagem(texto) {
-    
-    mensagem.style.display='block'
-    mensagem.innerHTML=texto
+    mensagem.style.display = 'block';
+    mensagem.innerHTML = texto;
 
     setTimeout(() => {
-        mensagem.style.display="none"
-        mensagem.innerHTML=''
-    },3000 );
+        mensagem.style.display = "none";
+        mensagem.innerHTML = '';
+    }, 3000);
 }
