@@ -19,7 +19,7 @@
         <form class="forma">
             <div class="tarefaBox">
                 <label for="tarefa" id="labela">Tarefa</label>
-                <input type="text" id="tarefa">
+                <input type="file" id="tarefa" accept=".pdf,.doc,.docx,.txt,.jpg,.png">
             </div>
             <div>
                 <label for="ano" id="labela">Data de conclusão</label>
@@ -28,8 +28,6 @@
             <div>
                 <input type="submit" value="Adicionar" id="btnAddTarefa"> 
             </div>
-            <a href="https://youtu.be/dQw4w9WgXcQ?si=Vlp_fwvZkml7DY7J" target="_blank">
-            </a>
         </form>
     
         <div id="conteudoTabela"></div>
@@ -39,22 +37,19 @@
 
     <div id="modalEditar" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-
-            <h2 class="h2tarefa">Editar Tarefa</h2>
-            <form id="formEditar">
-                <label for="editTarefa">Tarefa</label>
-                <input type="text" id="editTarefa">
-                <label for="editAno">Data de conclusão</label>
-                <input type="date" id="editAno">
-                <input type="hidden" id="editIndex">
-                <div class="btns">
-                    <button type="button" id="btnConfirmarEdicao">Confirmar</button>
-                    <button type="button" id="btnCancelarEdicao">Cancelar</button>
-                </div>
-            </form>
+          <span class="close">&times;</span>
+          <h2>Editar Tarefa</h2>
+          <form id="formEditar">
+            <label for="editArquivo">Arquivo:</label>
+            <input type="file" id="editArquivo">
+            <label for="editAno">Data de Conclusão:</label>
+            <input type="date" id="editAno">
+            <input type="hidden" id="editIndex">
+            <button type="button" id="btnConfirmarEdicao">Confirmar</button>
+            <button type="button" id="btnCancelarEdicao">Cancelar</button>
+          </form>
         </div>
-    </div>
+      </div>
 
     <script src="script.js"></script>
 </body>

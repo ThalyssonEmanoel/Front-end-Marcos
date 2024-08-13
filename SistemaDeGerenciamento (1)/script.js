@@ -8,12 +8,13 @@ let modalEditar = document.querySelector("#modalEditar");
 let spanClose = document.querySelector(".close");
 let btnConfirmarEdicao = document.querySelector("#btnConfirmarEdicao");
 let btnCancelarEdicao = document.querySelector("#btnCancelarEdicao");
-let inputEditTarefa = document.querySelector("#editTarefa");
+let inputEditArquivo = document.querySelector("#editArquivo"); // Correção para #editArquivo
 let inputEditAno = document.querySelector("#editAno");
 let inputEditIndex = document.querySelector("#editIndex");
 
 let tarefas = [];
 
+// Carrega as tarefas do localStorage
 getTarefas();
 renderizarTabela();
 
@@ -42,7 +43,8 @@ function addTarefa(tarefa, ano) {
 
 inputSubmit.addEventListener('click', function(e) {
     e.preventDefault();
-    addTarefa(inputTarefa.value, inputAno.value);
+    let arquivoNome = inputTarefa.files.length > 0 ? inputTarefa.files[0].name : ""; // Obtém o nome do arquivo se selecionado
+    addTarefa(arquivoNome, inputAno.value);
     limparFormulario();
     renderizarTabela();
 });
@@ -55,7 +57,8 @@ function excluirTarefa(index) {
 }
 
 function editarTarefa(index) {
-    inputEditTarefa.value = tarefas[index].tarefa;
+    // Preenche o modal com os dados da tarefa selecionada
+    inputEditArquivo.value = ""; // Não é possível definir o valor de um input file diretamente
     inputEditAno.value = tarefas[index].ano.split('/').reverse().join('-');
     inputEditIndex.value = index;
     modalEditar.style.display = "block";
@@ -63,7 +66,8 @@ function editarTarefa(index) {
 
 function confirmarEdicao() {
     let index = inputEditIndex.value;
-    tarefas[index].tarefa = inputEditTarefa.value;
+    let novoArquivo = inputEditArquivo.files.length > 0 ? inputEditArquivo.files[0].name : tarefas[index].tarefa; // Atualiza o nome do arquivo se houver um novo
+    tarefas[index].tarefa = novoArquivo; 
     tarefas[index].ano = formatarData(inputEditAno.value);
     setTarefas();
     mostrarMensagem("Tarefa editada com sucesso!");
@@ -137,27 +141,26 @@ function renderizarTabela() {
             border-radius: 5px; 
             padding: 5px 10px;
             cursor: pointer;
-            background:white
+            background: white;
         }
 
         .btnEditar {
-            padding: 5px 10px;
+            padding: 5px 10px 5px 15px;
             cursor: pointer;
             background-color: white;
             border: 1px solid black;
             border-radius: 5px; 
-            margin-left: 5px;
-            
+            margin-right: 10px;
         }
 
         .btnExcluir:hover {
             background-color: #ca0303;
-            color:white;
+            color: white;
         }
 
         .btnEditar:hover {
             background-color: darkblue;
-            color:white
+            color: white;
         }
     </style>
 

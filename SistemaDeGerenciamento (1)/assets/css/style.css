@@ -2,7 +2,7 @@
     --branco: white;
     --azul:#1C6E8C;
     --preto:black;
-    --azul-claro:#47ceff;
+    --azul-claro:#007bff;
     --fontRoboto:"Roboto", sans-serif;
     --fundão:#0f1238;
     --cinzaEcuro:#ccc;
@@ -60,10 +60,6 @@ html {
     font-family: var(--fontRoboto);
 }
 
-    input[type="text"],
-        input[type="number"] {
-            padding-left: 5px; 
-        }
 
 .forma label{
     display: flex;
@@ -74,8 +70,36 @@ html {
 .forma input{
     width: 300px;
     height: 35px;
-    border: solid black 2px;
-    border-radius: 10px;
+}
+
+.tarefaBox {
+    align-items: center;
+    margin: 20px;
+}
+
+#labela2{
+    margin-left: -25px;
+}
+
+#tarefa {
+    width: 300px; /* Ajusta o width conforme necessário */
+    padding: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Adiciona transições para animação */
+}
+
+#tarefa::file-selector-button {
+    border: none;
+    background: var(--cinzaClaro);
+    color:  var(--preto);
+    margin-right: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tarefa::file-selector-button:hover {
+    background-color: var(--azul);
+    color: var(--branco);
 }
 
 #btnAddTarefa {
@@ -131,11 +155,10 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--cinzaEcuro);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -173,14 +196,11 @@ html {
     font-size: 25px;
     font-family: var(--fontRoboto);
 }
+
 #formEditar input {
     width: 300px;
     height: 35px;
-    border: solid black 2px;
-    border-radius: 10px;
 }
-
-
 #btnConfirmarEdicao, #btnCancelarEdicao {
     color: white;
     margin-top: 10px;

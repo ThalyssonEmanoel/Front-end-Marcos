@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de salas</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Reserva de salas</h1>
+        <form>
+            <div>
+                <label>Descrição da atividade</label>
+                <input type="text" id="atividade" />
+            </div>
+            <div>
+                <label for="sala">Sala</label>
+                <select id="sala">
+                    <option value="1">Laboratório de informática 1</option>
+                    <option value="2">Laboratório de informática 2</option>
+                </select>
+            </div>
+            <div>
+                <label type="data_incial">Data inicial:</label>
+                <input type="datetime-local" id="data_inicial">
+            </div>
+            <div>
+                <label type="data_final">Data final:</label>
+                <input type="datetime-local" id="data_final">
+            </div>
+            <div>
+                <input type="button" value="Reservar" id="btnReservar">
+            </div>
+        </form>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
