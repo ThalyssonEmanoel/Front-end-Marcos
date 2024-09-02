@@ -1,0 +1,123 @@
+:root {
+    --branco: white;
+    --preto: black;
+    --cinza:#dddcdc79; 
+    --cinza-escuro:#00000079;
+    --verde: #45a049;
+    --verde-claro: #30f139;
+
+    --cor-secundaria: #333;
+    --borda-radius: 5px;
+    --espaco: 15px;
+    --padding: 10px;
+    --font-Roboto:"Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--cinza);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 15px;
+}
+
+h1 {
+    margin: 15px 0 15px 65px;
+    font-family: var(--font-Roboto);
+}
+
+form {
+    background: var(--branco);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-Roboto);
+}
+
+.nome{
+    margin-bottom: 15px;
+}
+
+.description {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.nome input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+}
+
+.preco input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.description textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    resize: none;
+}
+
+
+#btnReservar[type="button"]:hover {
+    background-color: var(--verde);
+}
+
+#btnReservar[type="button"]:active {
+    background-color: var(--verde-claro);
+}
+#btnReservar{
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-voltar:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}

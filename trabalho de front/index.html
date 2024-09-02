@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Fazenda</title>
+    <link rel="shortcut icon" href="/assets/img/ícone-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     
     <div class="container">
-        <div>
-            <h1>Produtos rurais</h1>
+        <div class="fundo">
+            <h1>Escolha o que deseja fazer</h1>
             <form>
-                <div>
-                    <label>Insira um produto</label>
-                    <input type="text" id="Produto" />
+                <div class="nome">
+                    <a href="Página 2.html" ><input type="button" value="Adicionar e listar produtos" id="btnAdd"></a>
                 </div>
-                <div>
-                    <label for="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" rows="5" cols="50" placeholder="De uma descrição ao produto"></textarea>
-                </div>
-
-                    <input type="button" value="Reservar" id="btnReservar">
+                <div class="nome">
+                    <a href="Página 3.html"><input type="button" value="Listar produtos paginados" id="btnListar"></a>
                 </div>
             </form>
-            <div id="tabela"></div>
         </div>
-        
     </div>
 
 </body>

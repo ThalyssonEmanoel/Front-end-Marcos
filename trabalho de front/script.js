@@ -1,45 +1,52 @@
-const url = "http://localhost:3000";
+const url = "http://localhost:3000";//<------post
 const tabela = document.querySelector("#tabela");
-const Atividade = document.querySelector("#atividade");
-const Sala = document.querySelector("#sala");
-const dataInicial = document.querySelector("#data_inicial");
-const dataFinal = document.querySelector("#data_final");
-const btnReservar = document.querySelector("#btnReservar");
+const produtoInput = document.querySelector("#Produto");
+const descricaoInput = document.querySelector("#descricao");
+const precoInput = document.querySelector("#preco");
+const btnAdicionar = document.querySelector("#btnReservar");
 
-let reservas = [];
+let produtos = [];
 
-async function ListarReservas() {
+/** 
+if (userinfo.cookies.agreed) {
+    Collect(user.data)
+} else {
+    Collect(user.data)
+}
+*/
+
+async function listarProdutos() {
     try {
-        const response = await fetch(`${url}/reservas`);
-        reservas = await response.json();
+        const response = await fetch(`${url}/produtos`);
+        produtos = await response.json();
     } catch (error) {
-        console.log('Erro ao listar reservas:', error);
+        console.log('Erro ao listar produtos:', error);
     }
 }
 
-async function addReservar() {
-    const reserva = {
-        Atividade: Atividade.value,
-        Sala: Sala.value,
-        dataInicial: new Date(dataInicial.value),
-        dataFinal: new Date(dataFinal.value)
+async function adicionarProduto() {
+    const produto = {
+        nome: produtoInput.value,
+        descricao: descricaoInput.value,
+        preco: parseFloat(precoInput.value) 
     };
+    
 
     try {
-        const response = await fetch(`${url}/reservas`, {
+        const response = await fetch(`${url}/produtos`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(reserva)
+            body: JSON.stringify(produto)
         });
 
         if (response.ok) {
-            console.log('Reserva adicionada com sucesso');
-            await ListarReservas();
+            console.log('Produto adicionado com sucesso');
+            await listarProdutos();
             renderizarTabela();
         } else {
-            console.log('Erro ao adicionar reserva:', response.statusText);
+            console.log('Erro ao adicionar produto:', response.statusText);
         }
     } catch (error) {
         console.log('Erro na requisição:', error);
@@ -47,7 +54,7 @@ async function addReservar() {
 }
 
 async function run() {
-    await ListarReservas();
+    await listarProdutos();
     renderizarTabela();
 }
 
@@ -55,63 +62,31 @@ run();
 
 function renderizarTabela() {
     tabela.innerHTML = `
-  <style>
-      :root{
-      --azul:#2caeff;
-      --branco:white;
-      --cinza:grey;
-      }
-  
-      table {
-          width: 100%;
-          border-collapse: collapse;
-          margin: 20px 0;
-      }
-  
-      th {
-          background-color: var(--azul);
-          color: white;
-          padding: 10px;
-          text-align: left;
-          border: 1px solid var(--cinza);
-      }
-  
-      td {
-          padding: 10px;
-          border: 1px solid var(--cinza);
-          text-align: left;
-      }
-  
-      tr:nth-child(even) {
-          background-color: var(--branco);
-      }
-  
-      tr:first-child {
-          border-top: 2px solid var(--azul);
-      }
-  
-      tr:hover {
-          background-color: var(--cinza);
-      }
-  </style>
-  
-      <table>
-          <tr>
-              <th>Atividade</th>
-              <th>Sala</th>
-          </tr>
-          ${reservas
+    <link rel="stylesheet" href="/assets/css/scriptcss.css">
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        ${produtos
             .map(
-              reserva =>
+                produto =>
                 `
-              <tr>
-              <td>${reserva.Atividade}</td>
-              <td>${reserva.Sala}</td>
-              </tr>
-              `
+                <tr>
+                <td>${produto.nome}</td>
+                <td>${produto.descricao}</td>
+                <td>${produto.preco}</td>
+                </tr>
+                `
             )
             .join("")}
-      </table>
-      `;
+    </table>
+    `;
 }
-ListarReservas()
+
+btnAdicionar.addEventListener("click", adicionarProduto);
+
+
+listarProdutos()

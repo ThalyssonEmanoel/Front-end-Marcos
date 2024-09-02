@@ -1,0 +1,74 @@
+:root{
+    --cinza: grey;
+    --branco:white;
+    --preto:black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px; /* Adicionado para afastar o conteúdo do botão "Voltar" */
+}
+
+#tabela {
+    width: 80%; /* Ajuste o valor conforme necessário */
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adicionado para afastar a paginação da tabela */
+}
+
+.pagination li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.pagination li a {
+    display: block;
+    width: 30px; 
+    line-height: 30px;
+    text-align: center; 
+    padding: 0; 
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 14px; 
+    border: 1px solid var(--preto);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination li a:hover {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+#mudar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: var(--preto);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mudar:hover {
+    background-color: var(--cinza);
+}
