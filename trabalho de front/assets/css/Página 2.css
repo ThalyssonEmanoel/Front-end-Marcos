@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('/assets/img/Boi_infelizmente\ ele\ se\ foi.jpg');
+    background-size: cover; 
+}
+
 html{
     background-color: var(--cinza);
 }
@@ -34,6 +39,7 @@ html{
 
 h1 {
     margin: 15px 0 15px 65px;
+    color: var(--branco);
     font-family: var(--font-Roboto);
 }
 

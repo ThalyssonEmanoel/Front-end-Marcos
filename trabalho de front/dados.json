@@ -281,24 +281,6 @@
       "nome": "Farinha de Aveia",
       "descricao": "Farinha de aveia, rica em fibras e nutrientes, ideal para pães e bolos.",
       "preco": 6
-    },
-    {
-      "id": "48",
-      "nome": "Pasta de Amendoim",
-      "descricao": "Pasta de amendoim natural, feita com amendoins torrados e sem adição de açúcar.",
-      "preco": 9
-    },
-    {
-      "id": "49",
-      "nome": "Chá Verde",
-      "descricao": "Chá verde puro, conhecido por seus benefícios à saúde e sabor delicado.",
-      "preco": 7
-    },
-    {
-      "id": "50",
-      "nome": "Manteiga de Amêndoa",
-      "descricao": "Manteiga de amêndoa natural, feita com amêndoas torradas e sem adição de açúcares.",
-      "preco": 12
     }
-]
+  ]
 }
