@@ -7,22 +7,52 @@ const page4 = document.querySelector("#pag4");
 const page5 = document.querySelector("#pag5");
 
 let produtos = [];
-const produtosPorPagina = 3;
+let pagina = 1;
 
-async function listarProdutos() {
-    try {
-        const response = await fetch(`${url}/produtos`);
-        produtos = await response.json();
-        renderizarTabela(1);  // Renderiza a primeira página por padrão
-    } catch (error) {
-        console.log('Erro ao listar produtos:', error);
-    }
-}
+renderizarTabela()
 
-function renderizarTabela(pagina) {
-    const inicio = (pagina - 1) * produtosPorPagina;
-    const fim = inicio + produtosPorPagina;
-    const produtosPagina = produtos.slice(inicio, fim);
+    page1.addEventListener('click', (e) =>{
+        e.preventDefault();
+        pagina = 1
+        renderizarTabela()
+    });
+    page2.addEventListener('click', (e) => {
+        e.preventDefault();
+        pagina = 2
+        renderizarTabela()
+    });
+    page3.addEventListener('click', (e) =>{
+        e.preventDefault();
+        pagina = 3
+        renderizarTabela()
+    });
+    page4.addEventListener('click', (e) =>{
+        e.preventDefault();
+        pagina = 4
+        renderizarTabela()
+    });
+    page5.addEventListener('click', (e) => {
+        e.preventDefault();
+        pagina = 5
+        renderizarTabela()
+    });
+
+    async function listarProdutos(pagina) {
+        const response = await fetch(`${url}/produtos?_page=${pagina}`);
+        try {
+            if (!response.ok) {
+                throw new Error(`${response.status}`);
+            }
+            const json = await response.json();
+            produtos = json.data; 
+            console.log(produtos);
+        } catch (error) {
+            console.error(error.message);
+        }
+    }    
+
+ async function renderizarTabela() {
+    await listarProdutos(pagina);   
 
     tabela.innerHTML = `
     <link rel="stylesheet" href="/assets/css/scriptcss.css">
@@ -33,9 +63,7 @@ function renderizarTabela(pagina) {
             <th>Descrição</th>
             <th>Preço</th>
         </tr>
-        ${produtosPagina
-            .map(
-                produto =>
+        ${produtos.map((produto) =>
                 `
                 <tr>
                 <td>${produto.nome}</td>
@@ -47,19 +75,5 @@ function renderizarTabela(pagina) {
             .join("")}
     </table>
     `;
-}
 
-function configurarPaginas() {
-    page1.addEventListener('click', () => renderizarTabela(1));
-    page2.addEventListener('click', () => renderizarTabela(2));
-    page3.addEventListener('click', () => renderizarTabela(3));
-    page4.addEventListener('click', () => renderizarTabela(4));
-    page5.addEventListener('click', () => renderizarTabela(5));
 }
-
-function run() {
-    listarProdutos();
-    configurarPaginas();
-}
-
-run();

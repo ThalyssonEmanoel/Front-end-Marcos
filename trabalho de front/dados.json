@@ -37,10 +37,268 @@
       "preco": 15
     },
     {
-      "id": "db6e",
-      "nome": "Chocolate de vaca mnarrom",
-      "descricao": "leite marrom",
-      "preco": 1000000
+      "id": "7",
+      "nome": "Iogurte Natural",
+      "descricao": "Iogurte feito com leite fresco e fermentos naturais.",
+      "preco": 5
+    },
+    {
+      "id": "8",
+      "nome": "Requeijão",
+      "descricao": "Requeijão cremoso feito com leite integral.",
+      "preco": 9
+    },
+    {
+      "id": "9",
+      "nome": "Creme de Leite",
+      "descricao": "Creme de leite fresco, ideal para sobremesas e culinária.",
+      "preco": 7
+    },
+    {
+      "id": "10",
+      "nome": "Ricota",
+      "descricao": "Ricota fresca, feita com leite integral.",
+      "preco": 11
+    },
+    {
+      "id": "11",
+      "nome": "Pão Caseiro",
+      "descricao": "Pão caseiro, assado diariamente com ingredientes frescos.",
+      "preco": 4
+    },
+    {
+      "id": "12",
+      "nome": "Manteiga de Alho",
+      "descricao": "Manteiga artesanal com alho, ideal para pães e pratos variados.",
+      "preco": 10
+    },
+    {
+      "id": "13",
+      "nome": "Molho de Tomate",
+      "descricao": "Molho de tomate caseiro, feito com tomates frescos.",
+      "preco": 6
+    },
+    {
+      "id": "14",
+      "nome": "Geléia de Frutas",
+      "descricao": "Geléia feita com frutas da estação, sem conservantes.",
+      "preco": 8
+    },
+    {
+      "id": "15",
+      "nome": "Conserva de Pepino",
+      "descricao": "Pepinos em conserva com especiarias, preparados artesanalmente.",
+      "preco": 7
+    },
+    {
+      "id": "16",
+      "nome": "Compota de Maçã",
+      "descricao": "Compota de maçã feita com maçãs frescas e açúcar.",
+      "preco": 9
+    },
+    {
+      "id": "17",
+      "nome": "Queijo Prato",
+      "descricao": "Queijo prato curado, com sabor suave e textura cremosa.",
+      "preco": 12
+    },
+    {
+      "id": "18",
+      "nome": "Cottage",
+      "descricao": "Queijo cottage fresco, ideal para saladas e lanches.",
+      "preco": 10
+    },
+    {
+      "id": "19",
+      "nome": "Queijo Minas",
+      "descricao": "Queijo minas frescal, feito com leite integral.",
+      "preco": 11
+    },
+    {
+      "id": "20",
+      "nome": "Presunto Caseiro",
+      "descricao": "Presunto caseiro, curado e defumado artesanalmente.",
+      "preco": 14
+    },
+    {
+      "id": "21",
+      "nome": "Salame",
+      "descricao": "Salame defumado, preparado com especiarias e carne selecionada.",
+      "preco": 16
+    },
+    {
+      "id": "22",
+      "nome": "Azeite Extra Virgem",
+      "descricao": "Azeite extra virgem, prensado a frio.",
+      "preco": 20
+    },
+    {
+      "id": "23",
+      "nome": "Vinagre Balsâmico",
+      "descricao": "Vinagre balsâmico envelhecido, com sabor suave e adocicado.",
+      "preco": 18
+    },
+    {
+      "id": "24",
+      "nome": "Farinha de Trigo",
+      "descricao": "Farinha de trigo refinada, ideal para panificação.",
+      "preco": 5
+    },
+    {
+      "id": "25",
+      "nome": "Açúcar Mascavo",
+      "descricao": "Açúcar mascavo orgânico, com sabor mais intenso e natural.",
+      "preco": 6
+    },
+    {
+      "id": "26",
+      "nome": "Cacau em Pó",
+      "descricao": "Cacau em pó puro, sem adição de açúcares ou conservantes.",
+      "preco": 8
+    },
+    {
+      "id": "27",
+      "nome": "Granola",
+      "descricao": "Granola caseira, com aveia, mel e frutas secas.",
+      "preco": 12
+    },
+    {
+      "id": "28",
+      "nome": "Muesli",
+      "descricao": "Muesli nutritivo, preparado com cereais, frutas e sementes.",
+      "preco": 10
+    },
+    {
+      "id": "29",
+      "nome": "Chá de Ervas",
+      "descricao": "Chá de ervas naturais, cultivado na própria fazenda.",
+      "preco": 7
+    },
+    {
+      "id": "30",
+      "nome": "Compota de Pêssego",
+      "descricao": "Compota de pêssego, feita com pêssegos frescos e açúcar.",
+      "preco": 9
+    },
+    {
+      "id": "31",
+      "nome": "Picles de Cenoura",
+      "descricao": "Cenouras em conserva com especiarias, preparadas artesanalmente.",
+      "preco": 8
+    },
+    {
+      "id": "32",
+      "nome": "Suco de Laranja",
+      "descricao": "Suco de laranja natural, sem adição de açúcares ou conservantes.",
+      "preco": 5
+    },
+    {
+      "id": "33",
+      "nome": "Suco de Maçã",
+      "descricao": "Suco de maçã puro, extraído de maçãs frescas.",
+      "preco": 5
+    },
+    {
+      "id": "34",
+      "nome": "Massa Fresca",
+      "descricao": "Massa fresca caseira, ideal para receitas rápidas e saborosas.",
+      "preco": 7
+    },
+    {
+      "id": "35",
+      "nome": "Molho Pesto",
+      "descricao": "Molho pesto caseiro, feito com manjericão fresco e nozes.",
+      "preco": 9
+    },
+    {
+      "id": "36",
+      "nome": "Caldo de Galinha",
+      "descricao": "Caldo de galinha caseiro, feito com ingredientes frescos.",
+      "preco": 6
+    },
+    {
+      "id": "37",
+      "nome": "Caldo de Carne",
+      "descricao": "Caldo de carne caseiro, ideal para sopas e ensopados.",
+      "preco": 7
+    },
+    {
+      "id": "38",
+      "nome": "Sopa de Legumes",
+      "descricao": "Sopa de legumes caseira, preparada com vegetais frescos.",
+      "preco": 8
+    },
+    {
+      "id": "39",
+      "nome": "Biscoitos Caseiros",
+      "descricao": "Biscoitos artesanais, feitos com ingredientes naturais.",
+      "preco": 6
+    },
+    {
+      "id": "40",
+      "nome": "Tapioca",
+      "descricao": "Tapioca preparada com goma de mandioca, ideal para diversos recheios.",
+      "preco": 5
+    },
+    {
+      "id": "41",
+      "nome": "Pasta de Dente Natural",
+      "descricao": "Pasta de dente natural, feita com ingredientes orgânicos.",
+      "preco": 7
+    },
+    {
+      "id": "42",
+      "nome": "Sabonete Artesanal",
+      "descricao": "Sabonete artesanal, feito com óleos essenciais e ingredientes naturais.",
+      "preco": 8
+    },
+    {
+      "id": "43",
+      "nome": "Xampu Natural",
+      "descricao": "Xampu natural, livre de sulfatos e silicones, feito com extratos vegetais.",
+      "preco": 10
+    },
+    {
+      "id": "44",
+      "nome": "Condicionador Natural",
+      "descricao": "Condicionador natural, enriquecido com óleos e extratos vegetais.",
+      "preco": 11
+    },
+    {
+      "id": "45",
+      "nome": "Desodorante Natural",
+      "descricao": "Desodorante natural, sem alumínio e fragrâncias artificiais.",
+      "preco": 9
+    },
+    {
+      "id": "46",
+      "nome": "Óleo de Coco",
+      "descricao": "Óleo de coco virgem, ideal para culinária e cuidados pessoais.",
+      "preco": 14
+    },
+    {
+      "id": "47",
+      "nome": "Farinha de Aveia",
+      "descricao": "Farinha de aveia, rica em fibras e nutrientes, ideal para pães e bolos.",
+      "preco": 6
+    },
+    {
+      "id": "48",
+      "nome": "Pasta de Amendoim",
+      "descricao": "Pasta de amendoim natural, feita com amendoins torrados e sem adição de açúcar.",
+      "preco": 9
+    },
+    {
+      "id": "49",
+      "nome": "Chá Verde",
+      "descricao": "Chá verde puro, conhecido por seus benefícios à saúde e sabor delicado.",
+      "preco": 7
+    },
+    {
+      "id": "50",
+      "nome": "Manteiga de Amêndoa",
+      "descricao": "Manteiga de amêndoa natural, feita com amêndoas torradas e sem adição de açúcares.",
+      "preco": 12
     }
-  ]
+]
 }

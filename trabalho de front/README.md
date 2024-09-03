@@ -10,3 +10,37 @@
 ## Objetivo
 
  O objetivo desse projeto foi criar um projetinho, o qual criasse e armazenasse dados em uma tabela, o fato de existirem duas tabelas se dar pelo simples fato de facilitar o entendimento do que foi pedido pelo professor Marco.
+
+
+ ## Código 
+
+- `npx json-server dados.json`
+
+
+
+
+
+
+async function renderizarTabela() {
+    await fetchData(pagina);
+    table.innerHTML =
+    `<table>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Curso</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${alunos.map((aluno) => `
+                <tr>
+                    <th scope="row">${aluno.nome}</th>
+                    <td scope="row">${aluno.idade}</td>
+                    <td scope="row">${aluno.curso}</td>
+                    <td scope="row">${aluno.email}</td>
+                </tr>
+            `).join('')}
+        </tbody>
+    </table>
