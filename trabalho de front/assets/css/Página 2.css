@@ -3,8 +3,8 @@
     --preto: black;
     --cinza:#dddcdc79; 
     --cinza-escuro:#00000079;
-    --verde: #45a049;
-    --verde-claro: #30f139;
+    --azul: #0004ff;
+    --azul-claro: #008cff;
 
     --cor-secundaria: #333;
     --borda-radius: 5px;
@@ -87,11 +87,11 @@ label {
 
 
 #btnReservar[type="button"]:hover {
-    background-color: var(--verde);
+    background-color: var(--azul);
 }
 
 #btnReservar[type="button"]:active {
-    background-color: var(--verde-claro);
+    background-color: var(--azul-claro);
 }
 #btnReservar{
     background-color: var(--cinza-escuro);
