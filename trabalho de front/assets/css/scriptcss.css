@@ -1,44 +1,42 @@
-        :root {
-            --azul: #4043f9;
-            --branco: white;
-            --cinza: grey;
-            --preto:#000000;
-            --laranja:#ff7700;
-        }
+:root {
+  --azul: #4043f9;
+  --branco: white;
+  --cinza: grey;
+  --preto: #000000;
+  --laranja: #ff7700;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
 
-        th {
-            background-color: var(--azul);
-            color: var(--branco);
-            padding: 10px;
-            text-align: left;
-            border: 1px solid var(--branco);
-        }
+th {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--branco);
+}
 
-        td {
-            padding: 10px;
-            border: 1px solid var(--branco);
-            text-align: left;
-            border: 1px solid var(--preto);
-        }
+td {
+  padding: 10px;
+  border: 1px solid var(--branco);
+  text-align: left;
+  border: 1px solid var(--preto);
+}
 
-        tr {
-            background-color: var(--branco);
-            border: 1px solid var(--preto);
-        }
+tr {
+  background-color: var(--branco);
+  border: 1px solid var(--preto);
+}
 
-        tr:first-child {
-            border-top: 2px solid var(--cinza);
-        }
+tr:first-child {
+  border-top: 2px solid var(--cinza);
+}
 
-        tr:hover {
-            color: var(--branco);
-            background-color: var(--laranja);
-        }
-
-
+tr:hover {
+  color: var(--branco);
+  background-color: var(--laranja);
+}

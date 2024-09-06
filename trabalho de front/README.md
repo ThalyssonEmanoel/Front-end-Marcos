@@ -15,3 +15,12 @@
  ## Código 
 
 - `npx json-server dados.json`
+    ```
+    function renderizarPagina
+    if(qtdPaginas>0){
+    let p="";
+    for(let i=1;1<=qtdPaginas; i++){
+        p+='<div><a> '
+    }
+    }
+    ```
