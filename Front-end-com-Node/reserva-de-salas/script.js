@@ -50,8 +50,20 @@ async function run() {
     await ListarReservas();
     renderizarTabela();
 }
-
 run();
+
+async function deleteProduto() {
+    if (confirm(`Deseja excluir o aluno? ${id}`)) {
+        await fetch(`${url}/alunos/${id}`,
+            {method:`DELETE`})
+            .then(result => result.json())
+            .then(result => {console.log(result)})
+            .catch(error => console.log(error))
+        await getProduto(paginaAtual)
+        renderizarTabela()
+        renderizarPaginacao()
+    }
+}
 
 function renderizarTabela() {
     tabela.innerHTML = `
@@ -105,7 +117,7 @@ function renderizarTabela() {
               reserva =>
                 `
               <tr>
-              <td>${reserva.Atividade}</td>
+              <td >${reserva.Atividade}</td>
               <td>${reserva.Sala}</td>
               </tr>
               `
