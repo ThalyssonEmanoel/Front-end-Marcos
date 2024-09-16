@@ -18,29 +18,4 @@
 
 
 
-
-
-
-async function renderizarTabela() {
-    await fetchData(pagina);
-    table.innerHTML =
-    `<table>
-        <thead>
-            <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Idade</th>
-                <th scope="col">Curso</th>
-                <th scope="col">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            ${alunos.map((aluno) => `
-                <tr>
-                    <th scope="row">${aluno.nome}</th>
-                    <td scope="row">${aluno.idade}</td>
-                    <td scope="row">${aluno.curso}</td>
-                    <td scope="row">${aluno.email}</td>
-                </tr>
-            `).join('')}
-        </tbody>
-    </table>
+# SE O "SITE" FICAR ESTILIZAÇÃO, É O CSS BUGADO, BASTA APENAS NOMEAR A PASTA AO DESTINO...
