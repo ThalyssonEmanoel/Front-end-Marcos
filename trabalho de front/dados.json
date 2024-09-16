@@ -155,18 +155,6 @@
       "nome": "Pasta de Dente Natural",
       "descricao": "Pasta de dente natural, feita com ingredientes orgânicos.",
       "preco": 7
-    },
-    {
-      "id": "42",
-      "nome": "Sabonete Artesanal",
-      "descricao": "Sabonete artesanal, feito com óleos essenciais e ingredientes naturais.",
-      "preco": 8
-    },
-    {
-      "id": "e61a",
-      "nome": "Comida de boi vegetariana",
-      "descricao": "é um pedaço de carne vagano",
-      "preco": 1000000
     }
   ]
 }

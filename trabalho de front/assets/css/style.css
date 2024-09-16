@@ -1,7 +1,7 @@
 :root {
     --cinza-escuro:#00000079;
-    --verde: #45a049;
-    --verde-claro: #30f139;
+    --azul:#0004ff;
+    --azul-claro:#008cff;
     --branco: white;       
     --border-radius: 5px;    
     --padding: 10px;    
@@ -56,9 +56,9 @@ form {
 }
 
 .nome input:hover {
-    background-color: var(--verde);
+    background-color: var(--azul);
 }
 
 .nome input:active {
-    background-color: var(--verde-claro);
+    background-color: var(--azul-claro);
 }
