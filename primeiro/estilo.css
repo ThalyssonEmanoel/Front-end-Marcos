@@ -1,0 +1,168 @@
+:root{
+  --cor-primaria:#ffffff27;
+  --cor-secundaria:#e5e5e5a2;
+  --cor-3:#E74C3C;
+  --cor-4:white;
+  --cor-5:#ffd000a8;
+  --cor-6:#2d3748d0;
+  
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color:var(--cor-primaria);
+}
+  
+.content {
+  padding:15px;
+}
+  
+.menu{
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 2px;
+  z-index: 1;
+  width: 1915px;
+  position:absolute;
+  text-indent: -9%;
+  line-height: 35px;
+}
+  
+.menu ul{
+  list-style: none;
+}
+  
+.menu > ul > li{
+  display: inline;
+  font-size: large;
+  font-size: 18px;
+}
+.rect {
+  background-color: var(--cor-3);
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: -0px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: var(--cor-4);
+}
+.menu li{
+  padding-left: 36px;
+}
+  
+
+.fundoC > img{
+  height: 50%;
+  width: 1920px;
+}
+
+.faixa{
+  position: absolute;
+  top: 30%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor-5);
+  width: 1990px;
+  font-weight: 100;
+  text-align: center;
+  padding: 25px;
+  font-size: 30px;
+  font-family: Roboto,sans-serif;
+}
+.faixa2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor-5);
+  width: 800px;
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  font-family:  Roboto,sans-serif;
+}
+.conteudo{
+  margin-left: 8px;
+  text-indent: 20ch;
+  font-size: 19px;
+}
+  
+.progra{
+  text-indent: 15ch;
+  font-size: 19px;
+  margin-top: 80px;
+  font-size: 25px;
+  font: bold;
+}
+.perfil1{
+  margin-left: 47px;
+  text-indent: 15ch;
+  font-size: 19px;
+  margin-top: 80px;
+}
+
+.textoMa{
+  padding-left: 150px;
+  position: absolute;
+  top: 1080px;
+}
+.perfil2{
+  margin-left: 47px;
+  text-indent: 15ch;
+  font-size: 19px;
+  margin-top: 80px;
+}
+.textoRio{
+  padding-left: 150px;
+  position: absolute;
+  top: 1264px;
+}
+
+.perfil3{
+  margin-left: 47px;
+  text-indent: 15ch;
+  font-size: 19px;
+  margin-top: 80px;
+}
+.textoJo{
+  padding-left: 150px;
+  position: absolute;
+  top: 1600px;
+}
+.Local{
+  text-indent: 15ch;
+  font-size: 19px;
+  margin-top: 200px;
+  font-size: 25px;
+  font: bold;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mapa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rodape{
+    left: 0;
+  width: 100%;
+  background-color: var(--cor-6);
+  padding: 80px 0;
+  margin-top: -4px;
+  color: var(--cor-4); 
+  font-size: 24px; 
+  padding-left: 210px;
+}
+.rodape>img{
+  width: 50px;
+}
