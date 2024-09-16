@@ -1,0 +1,64 @@
+:root {
+    --cinza-escuro:#00000079;
+    --azul:#0004ff;
+    --azul-claro:#008cff;
+    --branco: white;       
+    --border-radius: 5px;    
+    --padding: 10px;    
+    --font-Roboto:"Roboto", sans-serif;      
+}
+body {
+    background-image: url('../img/boi.jpg');
+    background-size: cover; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.336);
+}
+
+.fundo{
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(1.0, 1.0, 0, 1.0);
+}
+
+h1 {
+    font-family: var(--font-Roboto);
+    margin: 0 0 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.nome input {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.nome input:hover {
+    background-color: var(--azul);
+}
+
+.nome input:active {
+    background-color: var(--azul-claro);
+}

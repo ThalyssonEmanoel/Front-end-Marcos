@@ -1,0 +1,246 @@
+:root {
+    --branco: white;
+    --azul:#1C6E8C;
+    --preto:black;
+    --azul-claro:#007bff;
+    --fontRoboto:"Roboto", sans-serif;
+    --fundão:#0f1238;
+    --cinzaEcuro:#ccc;
+    --cinzaClaro:#f0f0f0;
+    --vemermelhoClaro:#ff2222;
+    --vermelhoEscuro: #ca0303;
+    --verde: #03ca03;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundão); 
+}
+  
+.tarefa{
+    font-family: var(--fontRoboto);
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: 70px 87px 70px 88px; 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 560px;
+    border-radius: 5px;
+    height: 800px; 
+    background-color: var(--branco);
+    margin-top: 100px;
+}
+
+.titulo{
+    font-family: var(--fontRoboto);
+    font-size: 25px;
+    background-color: var(--azul);
+    padding: 25px 196px 25px 196px;
+    color: var(--branco);  
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+}
+.forma{
+    margin-bottom: 80px;
+    font-size: 25px;
+    font-family: var(--fontRoboto);
+}
+
+
+.forma label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.forma input{
+    width: 300px;
+    height: 35px;
+}
+
+.tarefaBox {
+    align-items: center;
+    margin: 20px;
+}
+
+#labela2{
+    margin-left: -25px;
+}
+
+#tarefa {
+    width: 300px; /* Ajusta o width conforme necessário */
+    padding: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Adiciona transições para animação */
+}
+
+#tarefa::file-selector-button {
+    border: none;
+    background: var(--cinzaClaro);
+    color:  var(--preto);
+    margin-right: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tarefa::file-selector-button:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+#btnAddTarefa {
+    margin-top: 50px;
+    border-radius: 4px;
+    height: 50px;
+    font-family: var(--fontRoboto);
+    font-size: 20px;
+    background-color: var(--cinzaClaro); 
+    border: 4px solid var(--cinzaEcuro); 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+#btnAddTarefa:hover {
+    background-color:var(--azul-claro); 
+    color: var(--branco); 
+    border: 4px solid var(--cinzaEcuro);
+}
+
+#btnAddTarefa:active {
+    background-color: var(--azul); 
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    border-color: var(--azul); 
+    transform: translateY(2px); 
+}
+
+
+.mensagem {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-family: var(--fontRoboto);
+    font-size: 25px;
+    background-color: green;
+    color: var(--branco);
+    border-radius: 5px;
+    display: none;
+}
+
+
+#drag{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: var(--cinzaEcuro);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.h2tarefa{
+    font-family: var(--fontRoboto);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#formEditar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+#formEditar label{
+    font-size: 25px;
+    font-family: var(--fontRoboto);
+}
+
+#formEditar input {
+    width: 300px;
+    height: 35px;
+}
+#btnConfirmarEdicao, #btnCancelarEdicao {
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btnConfirmarEdicao {
+    background-color: white;
+    color: black;
+}
+
+#btnCancelarEdicao {
+    background-color: white;
+    color: black;
+}
+
+#btnConfirmarEdicao:hover {
+    background-color: rgb(0, 173, 64);
+    color: white;
+}
+
+#btnCancelarEdicao:hover {
+    background-color: var(--vemermelhoClaro);
+    color: white;
+}
+
+#btnConfirmarEdicao:active {
+    background-color: rgb(0, 123, 44);
+    border-color: rgb(0, 123, 44);
+    color: white;
+}
+
+#btnCancelarEdicao:active {
+    background-color: var(--vermelhoEscuro);
+    border-color: var(--vermelhoEscuro);
+    color: white;
+}
+
+

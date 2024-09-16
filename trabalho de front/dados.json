@@ -1,0 +1,160 @@
+{
+  "produtos": [
+    {
+      "id": "13",
+      "nome": "Molho de Tomate",
+      "descricao": "Molho de tomate caseiro, feito com tomates frescos.",
+      "preco": 6
+    },
+    {
+      "id": "14",
+      "nome": "Geléia de Frutas",
+      "descricao": "Geléia feita com frutas da estação, sem conservantes.",
+      "preco": 8
+    },
+    {
+      "id": "15",
+      "nome": "Conserva de Pepino",
+      "descricao": "Pepinos em conserva com especiarias, preparados artesanalmente.",
+      "preco": 7
+    },
+    {
+      "id": "16",
+      "nome": "Compota de Maçã",
+      "descricao": "Compota de maçã feita com maçãs frescas e açúcar.",
+      "preco": 9
+    },
+    {
+      "id": "17",
+      "nome": "Queijo Prato",
+      "descricao": "Queijo prato curado, com sabor suave e textura cremosa.",
+      "preco": 12
+    },
+    {
+      "id": "18",
+      "nome": "Cottage",
+      "descricao": "Queijo cottage fresco, ideal para saladas e lanches.",
+      "preco": 10
+    },
+    {
+      "id": "20",
+      "nome": "Presunto Caseiro",
+      "descricao": "Presunto caseiro, curado e defumado artesanalmente.",
+      "preco": 14
+    },
+    {
+      "id": "23",
+      "nome": "Vinagre Balsâmico",
+      "descricao": "Vinagre balsâmico envelhecido, com sabor suave e adocicado.",
+      "preco": 18
+    },
+    {
+      "id": "24",
+      "nome": "Farinha de Trigo",
+      "descricao": "Farinha de trigo refinada, ideal para panificação.",
+      "preco": 5
+    },
+    {
+      "id": "25",
+      "nome": "Açúcar Mascavo",
+      "descricao": "Açúcar mascavo orgânico, com sabor mais intenso e natural.",
+      "preco": 6
+    },
+    {
+      "id": "26",
+      "nome": "Cacau em Pó",
+      "descricao": "Cacau em pó puro, sem adição de açúcares ou conservantes.",
+      "preco": 8
+    },
+    {
+      "id": "27",
+      "nome": "Granola",
+      "descricao": "Granola caseira, com aveia, mel e frutas secas.",
+      "preco": 12
+    },
+    {
+      "id": "28",
+      "nome": "Muesli",
+      "descricao": "Muesli nutritivo, preparado com cereais, frutas e sementes.",
+      "preco": 10
+    },
+    {
+      "id": "29",
+      "nome": "Chá de Ervas",
+      "descricao": "Chá de ervas naturais, cultivado na própria fazenda.",
+      "preco": 7
+    },
+    {
+      "id": "30",
+      "nome": "Compota de Pêssego",
+      "descricao": "Compota de pêssego, feita com pêssegos frescos e açúcar.",
+      "preco": 9
+    },
+    {
+      "id": "31",
+      "nome": "Picles de Cenoura",
+      "descricao": "Cenouras em conserva com especiarias, preparadas artesanalmente.",
+      "preco": 8
+    },
+    {
+      "id": "32",
+      "nome": "Suco de Laranja",
+      "descricao": "Suco de laranja natural, sem adição de açúcares ou conservantes.",
+      "preco": 5
+    },
+    {
+      "id": "33",
+      "nome": "Suco de Maçã",
+      "descricao": "Suco de maçã puro, extraído de maçãs frescas.",
+      "preco": 5
+    },
+    {
+      "id": "34",
+      "nome": "Massa Fresca",
+      "descricao": "Massa fresca caseira, ideal para receitas rápidas e saborosas.",
+      "preco": 7
+    },
+    {
+      "id": "35",
+      "nome": "Molho Pesto",
+      "descricao": "Molho pesto caseiro, feito com manjericão fresco e nozes.",
+      "preco": 9
+    },
+    {
+      "id": "36",
+      "nome": "Caldo de Galinha",
+      "descricao": "Caldo de galinha caseiro, feito com ingredientes frescos.",
+      "preco": 6
+    },
+    {
+      "id": "37",
+      "nome": "Caldo de Carne",
+      "descricao": "Caldo de carne caseiro, ideal para sopas e ensopados.",
+      "preco": 7
+    },
+    {
+      "id": "38",
+      "nome": "Sopa de Legumes",
+      "descricao": "Sopa de legumes caseira, preparada com vegetais frescos.",
+      "preco": 8
+    },
+    {
+      "id": "39",
+      "nome": "Biscoitos Caseiros",
+      "descricao": "Biscoitos artesanais, feitos com ingredientes naturais.",
+      "preco": 6
+    },
+    {
+      "id": "40",
+      "nome": "Tapioca",
+      "descricao": "Tapioca preparada com goma de mandioca, ideal para diversos recheios.",
+      "preco": 5
+    },
+    {
+      "id": "41",
+      "nome": "Pasta de Dente Natural",
+      "descricao": "Pasta de dente natural, feita com ingredientes orgânicos.",
+      "preco": 7
+    }
+  ]
+}
